@@ -1,0 +1,88 @@
+.filter-bar-container {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+  animation: fadeIn 0.6s ease-in;
+}
+
+.filter-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.filter-group input,
+.filter-group select {
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  min-width: 200px;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.filter-group input:focus,
+.filter-group select:focus {
+  border-color: #0d62a6;
+  box-shadow: 0 0 0 2px rgba(13, 98, 166, 0.2);
+}
+
+.datetime-fields {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.datetime-fields label {
+  font-size: 13px;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.filter-buttons {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.apply-btn {
+  background: linear-gradient(to right, #0d62a6, #00bcd4);
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  font-weight: bold;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: transform 0.2s ease;
+}
+
+.apply-btn:hover {
+  transform: scale(1.05);
+}
+
+.clear-btn {
+  background: #f2f2f2;
+  color: #555;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.clear-btn:hover {
+  background: #ddd;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(15px); }
+  100% { opacity: 1; transform: translateY(0); }
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "level": "error",
+    "message": "Failed to connect to database",
+    "resourceId": "server-01",
+    "timestamp": "2025-07-06T18:00:00Z",
+    "traceId": "abc123",
+    "spanId": "def456",
+    "commit": "f3c12a",
+    "metadata": {
+      "parentResourceId": "cluster-01"
+    }
+  },
+  {
+    "level": "warn",
+    "message": "CPU usage exceeded 85% on node server-02",
+    "resourceId": "server-02",
+    "timestamp": "2025-07-06T18:30:00Z",
+    "traceId": "trc101",
+    "spanId": "span101",
+    "commit": "9b23ef",
+    "metadata": {
+      "usage": "87%",
+      "threshold": "85%",
+      "node": "server-02"
+    }
+  },
+  {
+    "level": "info",
+    "message": "User profile updated successfully",
+    "resourceId": "user-service",
+    "timestamp": "2025-07-06T18:45:00Z",
+    "traceId": "trc202",
+    "spanId": "span202",
+    "commit": "bc789a",
+    "metadata": {
+      "userId": "u12345",
+      "operation": "update"
+    }
+  },
+  {
+    "level": "debug",
+    "message": "Auth token generated with claims",
+    "resourceId": "auth-service",
+    "timestamp": "2025-07-06T19:00:00Z",
+    "traceId": "trc303",
+    "spanId": "span303",
+    "commit": "a9cd32",
+    "metadata": {
+      "claims": [
+        "email",
+        "role",
+        "session"
+      ],
+      "tokenId": "jwt123xyz"
+    }
+  }
+]
