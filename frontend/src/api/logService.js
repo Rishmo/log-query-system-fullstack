@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'https://log-query-system-fullstack-vxu1.vercel.app/'; 
+const BASE_URL = 'https://log-query-system-fullstack.onrender.com'; 
 
 export const fetchLogs = async (filters) => {
   const params = new URLSearchParams();
